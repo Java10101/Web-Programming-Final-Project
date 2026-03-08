@@ -1,1 +1,32 @@
 
+
+.table-of-contents ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #870909;
+}
+
+.table-of-contents a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.table-of-contents a:hover {
+    color: #430926;
+}
+
+header {
+    background-color: #870909;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 40px;
+}
