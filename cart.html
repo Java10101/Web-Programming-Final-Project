@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Vinyl Vibes Music Store</title>
+</head>
+<body>
+
+    <header>
+        <h1>Vinyl Vibes Music Store</h1>
+        <p>Your Shopping Cart</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vinyls.html">Vinyl</a></li>
+            <li><a href="cds.html">CDs</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="playlists.html">Playlists</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Items in Your Cart</h2>
+            <div id="cart-items"></div>
+            <h3 id="cart-total">Total: $0.00</h3>
+            <button onclick="clearCart()">Clear Cart</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vinyl Vibes Music Store</p>
+        <p>This website follows Section 508 standards and WCAG 2.1 accessibility guidelines.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

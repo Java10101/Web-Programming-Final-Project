@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyls - Vinyl Vibes Music Store</title>
+</head>
+<body>
+
+    <header>
+        <h1>Vinyl Vibes Music Store</h1>
+        <p>Browse our vinyl collection</p>
+    </header>
+<!--Navigation Bar-->
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vinyls.html">Vinyl</a></li>
+        <li><a href="cds.html">CDs</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="playlists.html">Playlists</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+<main>
+    <section>
+        <h2>Vinyl Records</h2>
+        <p>Browse our collection of classic and modern vinyls!</p>
+    </section>
+    <!--Image Carousel-->
+    <section class="carousel-section">
+        <h2>Featured Vinyl</h2>
+
+        <div class="carousel">
+            <button onclick="prevSlide()">Previous</button>
+            <div class ="slide">
+                <!--ADD IMAGES-->
+                <img id="carousel-image" src="images/abbey-road.jpg" alt="The Beatles Walking Across a Crosswalk">
+                <p id="carousel-caption">Abbey Road by the Beatles - $29.99</p>
+            </div>
+
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </section>
+
+    <!--Available Vinyls-->
+    <section>
+        <h2>Available Vinyls</h2>
+        <table border="1">
+            <tr>
+                <th>Album</th>
+                <th>Artist</th>
+                <th>Genre</th>
+                <th>Price</th>
+                <th>Cart</th>
+            </tr>
+        <tr>
+                    <td>Abbey Road</td>
+                    <td>The Beatles</td>
+                    <td>Rock</td>
+                    <td>$29.99</td>
+                    <td><button onclick="addToCart('Abbey Road', 29.99)">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Rumours</td>
+                    <td>Fleetwood Mac</td>
+                    <td>Rock</td>
+                    <td>$24.99</td>
+                    <td><button onclick="addToCart('Rumours', 24.99)">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Thriller</td>
+                    <td>Michael Jackson</td>
+                    <td>Pop</td>
+                    <td>$27.99</td>
+                    <td><button onclick="addToCart('Thriller', 27.99)">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Back to Black</td>
+                    <td>Amy Winehouse</td>
+                    <td>Soul</td>
+                    <td>$26.99</td>
+                    <td><button onclick="addToCart('Amy Winehouse', 26.99)">Add to Cart</button></td>
+                </tr>    
+        </table>
+    </section>
+</main>
+<!--Footer-->
+<footer>
+        <p>&copy; 2026 Vinyl Vibes Music Store</p>
+        <p>This website follows Section 508 standards and WCAG 2.1 accessibility guidelines.</p>
+    </footer>
+    <!--Add Javascript Script called "Script.js to define the carousel function"-->
+    <script src="script.js"></script>
+</body>
+</html>

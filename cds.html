@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDs - Vinyl Vibes Music Store</title>
+</head>
+<body>
+ <header>
+        <h1>Vinyl Vibes Music Store</h1>
+        <p>Browse our CD collection</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vinyls.html">Vinyl</a></li>
+        <li><a href="cds.html">CDs</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="playlists.html">Playlists</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>CD Collection</h2>
+            <p>Check out some of our favorite CDs from a variety of artists and genres!</p>
+            <!--Add an image of a collection of CDs
+            <img src="" alt="A collection of music CDs" width="300"-->
+        </section>
+
+        <section>
+            <h2>Available CDs</h2>
+            <table border="1">
+                <tr>
+                    <th>Album</th>
+                    <th>Artist</th>
+                    <th>Genre</th>
+                    <th>Price</th>
+                    <th>Cart</th>
+                </tr>
+                <tr>
+                    <td>1989</td>
+                    <td>Taylor Swift</td>
+                    <td>Pop</td>
+                    <td>$14.99</td>
+                    <td><button onclick="addToCart('1989', 14.99)">Add to Cart</button></td>
+                </tr>
+            <tr>
+                    <td>Divide</td>
+                    <td>Ed Sheeran</td>
+                    <td>Pop</td>
+                    <td>$13.99</td>
+                    <td><button onclick="addToCart('Divide', 13.99)">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Good Kid, M.A.A.D City</td>
+                    <td>Kendrick Lamar</td>
+                    <td>Hip Hop</td>
+                    <td>$15.99</td>
+                    <td><button onclick="addToCart('Good Kid, M.A.A.D City', 15.99)">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Adele</td>
+                    <td>Soul</td>
+                    <td>$12.99</td>
+                    <td><button onclick="addToCart('25', 12.99)">Add to Cart</button></td>
+                </tr>        
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Vinyl Vibes Music Store</p>
+        <p>This website follows Section 508 standards and WCAG 2.1 accessibility guidelines.</p>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlists - Vinyl Vibes Music Store</title>
+</head>
+<body>
+
+    <header>
+        <h1>Vinyl Vibes Music Store</h1>
+        <p>Explore playlists inspired by our favorite sounds</p>
+    </header>
+
+    <!--Navigation Bar-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vinyls.html">Vinyl</a></li>
+            <li><a href="cds.html">CDs</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="playlists.html">Playlists</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Featured Playlists</h2>
+            <p>Listen to our curated playlists based on different moods and genres.</p>
+        </section>
+        
+        <!-- Random playlist button -->
+        <button onclick="suggestPlaylist()">Suggest a Playlist</button>
+
+        <p id="playlistSuggestion"></p>
+    </section>
+
+        <section>
+            <table border="1">
+                <tr>
+                    <th>Playlist Name</th>
+                    <th>Genre / Mood</th>
+                    <th>Description</th>
+                    <th>Listen</th>
+                </tr>
+                <tr>
+                    <td>Classic Rock Revival</td>
+                    <td>Rock</td>
+                    <td>A mix of legendary guitar riffs and timeless albums.</td>
+                    <!--Make a Playlist and add it here (or just find one!)-->
+                    <td><a href="https://open.spotify.com/" target="_blank">Open Playlist</a></td>
+                </tr>
+                <tr>
+                    <td>Pop Essentials</td>
+                    <td>Pop</td>
+                    <td>Upbeat hits and fan-favorite pop tracks.</td>
+                    <!--Make a Playlist and add it here (or just find one!)-->
+                    <td><a href="https://open.spotify.com/" target="_blank">Open Playlist</a></td>
+                </tr>
+                <tr>
+                    <td>Late Night Vinyl</td>
+                    <td>Chill</td>
+                    <td>Relaxed songs for studying, driving, or winding down.</td>
+                    <!--Make a Playlist and add it here (or just find one!)-->
+                    <td><a href="https://open.spotify.com/" target="_blank">Open Playlist</a></td>
+                </tr>
+                <tr>
+                    <td>Soul Session</td>
+                    <td>Soul / R&amp;B</td>
+                    <td>Smooth vocals and classic soul favorites.</td>
+                    <!--Make a Playlist and add it here (or just find one!)-->
+                    <td><a href="https://open.spotify.com/" target="_blank">Open Playlist</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Why Playlists?</h2>
+            <p>
+                Our playlists help customers discover music that matches the records,
+                CDs, and merch featured throughout our store.
+            </p>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2026 Vinyl Vibes Music Store</p>
+        <p>This website follows Section 508 standards and WCAG 2.1 accessibility guidelines.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

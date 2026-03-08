@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch - Vinyl Vibes Music Store</title>
+</head>
+<body>
+
+    <header>
+        <h1>Vinyl Vibes Music Store</h1>
+        <p>Shop music-inspired merch</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vinyls.html">Vinyl</a></li>
+            <li><a href="cds.html">CDs</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="playlists.html">Playlists</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Available Merch</h2>
+            <table border="1">
+                <tr>
+                    <th>Item</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Cart</th>
+                </tr>
+                <tr>
+                    <td>Vintage Logo T-Shirt</td>
+                    <td>Clothing</td>
+                    <td>$19.99</td>
+                    <td><button onclick="addToCart('Vintage Logo T-Shirt', 19.99)">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Music Store Tote Bag</td>
+                    <td>Accessory</td>
+                    <td>$12.99</td>
+                    <td><button onclick="addToCart('Music Store Tote Bag', 12.99)">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Band Poster Pack</td>
+                    <td>Decor</td>
+                    <td>$9.99</td>
+                    <td><button onclick="addToCart('Band Poster Pack', 9.99)">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Sticker Pack</td>
+                    <td>Accessory</td>
+                    <td>$5.99</td>
+                    <td><button onclick="addToCart('Sticker Pack', 5.99)">Add to Cart</button></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vinyl Vibes Music Store</p>
+        <p>This website follows Section 508 standards and WCAG 2.1 accessibility guidelines.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

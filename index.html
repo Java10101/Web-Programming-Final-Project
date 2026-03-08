@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!--Can Change the Name of the Title this is a placeholder!-->
+    <title>Vinyl Vibes Music Store</title>
+    <!--Add external css stylesheet here-->
 </head>
 <body>
-    
+
+   <!--Header section--> 
+
+   <header>
+    <h1>Vinyl Vibes Music Store</h1>
+    <p>Discover vinyl, CDs, playlsits and merch from your favorite artists!</p>
+   </header>
+   
+   <!--Navigation Bar-->
+   <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vinyls.html">Vinyl</a></li>
+        <li><a href="cds.html">CDs</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="playlists.html">Playlists</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+
+    </ul>
+   </nav>
+
+   <!--Main Content-->
+   <main>
+    <section>
+        <h2>Welcome to Our Store!</h2>
+        <!--Make a logo and add it here!-->
+        <!--<img src="source" alt=""-->
+        <p>Browse our collection of records, CDs, and exclusive music merch and amazing playlists!</p>
+    </section>
+
+    <!--Featured Products Table-->
+    <section>
+        <h2>Featured Albums</h2>
+        <table>
+            <tr>
+                <th>Album</th>
+                <th>Artist</th>
+                <th>Price</th>
+            </tr>
+    <!--Dagen's Favorite Album!-->            
+                <tr>
+                    <td>Underwater Sunshine</td>
+                    <td>Couting Crows</td>
+                    <td>$25.99</td>
+                </tr>
+    <!--Gabby's Favorite Album!-->            
+                <tr>
+                    <td>Gabby's Fav Album</td>
+                    <td>Artist</td>
+                    <td>Price</td>
+                </tr>            
+    <!--Ava's Favorite Album!-->            
+                <tr>
+                    <td>Ava's Fav Album</td>
+                    <td>Artist</td>
+                    <td>Price</td>
+                </tr>
+    <!--Srihitha's Favorite Album!-->            
+                <tr>
+                    <td>Srihitha's Fav Album</td>
+                    <td>Artist</td>
+                    <td>Price</td>
+                </tr>                 
+        </table>
+    </section>
+    <!--Favorite Artist Form-->
+    <section>
+        <h2>Tell Us Your Favorite Artist</h2>
+        <!--Form Validation!!-->
+        <form onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="artist">Favorite Artist:</label>
+            <input type="text" id="artist" name="artist">
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+   </main>
+
+   <!--Footer-->
+   <footer>
+    <p>&copy; 2026 Vinyl Vines Music Store</p>
+    <p>This website follows Section 508 standards and WCAG 2.1 accessibility guidelines.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

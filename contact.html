@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Vinyl Vibes Music Store</title>
+</head>
+<body>
+
+    <header>
+        <h1>Vinyl Vibes Music Store</h1>
+        <p>Contact us and tell us about your music favorites</p>
+    </header>
+
+    <!--Navigation Bar-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vinyls.html">Vinyl</a></li>
+            <li><a href="cds.html">CDs</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="playlists.html">Playlists</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contact Form</h2>
+            <form onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+
+                <br><br>
+
+                <label for="artist">Favorite Artist:</label>
+                <input type="text" id="artist" name="artist">
+
+                <br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" cols="30"></textarea>
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2026 Vinyl Vibes Music Store</p>
+        <p>This website follows Section 508 standards and WCAG 2.1 accessibility guidelines.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
