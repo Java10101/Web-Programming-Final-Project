@@ -1,1 +1,5 @@
 Thought I would put this here for notes that we need to share about the code with each other!
+
+I went through and made all the required content and corresponding Javascript. Feel free to add more, but this hits all the requirements! 
+CSS most definitely needs to be done, but that's all that's left!
+--Dagen
