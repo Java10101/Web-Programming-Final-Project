@@ -8,41 +8,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
 
-   <!--Header section--> 
+    <!--Header section--> 
 
-   <header>
+   <header >
     <h1>Vinyl Vibes Music Store</h1>
     <p>Discover vinyl, CDs, playlsits and merch from your favorite artists!</p>
    </header>
-   
-   <!--Navigation Bar-->
-   <nav class="table-of-contents">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="vinyls.html">Vinyl</a></li>
-        <li><a href="cds.html">CDs</a></li>
-        <li><a href="merch.html">Merch</a></li>
-        <li><a href="playlists.html">Playlists</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
 
-    </ul>
-   </nav>
-
-   <!--Main Content-->
-   <main>
-    <section>
+    <!--Welcome Bar-->
+<main>
+    <section class="welcome-section">
         <h2>Welcome to Our Store!</h2>
-        <!--Make a logo and add it here!-->
-        <!--<img src="source" alt=""-->
-        <p>Browse our collection of records, CDs, and exclusive music merch and amazing playlists!</p>
+        <p>Browse our collection of records, CDs, exclusive music merch and amazing playlists!</p>
     </section>
+</main>
 
-    <!--Featured Products Table-->
-    <section>
-        <h2>Featured Albums</h2>
-        <table>
+
+<!--Navigation Links-->
+
+<div class="shop-sections">
+
+    </section>
+  <a href="vinyls.html" class="section-card">
+    <img src="https://i.pinimg.com/736x/05/40/0a/05400a1e8b779ca390b69d0205bc869d.jpg" alt="Vinyl Records">
+    <span>Vinyl</span>
+  </a>
+
+  <a href="cds.html" class="section-card">
+    <img src="https://i.pinimg.com/736x/c6/bf/c5/c6bfc5dafdd204cb1e26637abfc39a65.jpg" alt="CDs">
+    <span>CDs</span>
+  </a>
+
+  <a href="merch.html" class="section-card">
+    <img src="https://i.pinimg.com/736x/f2/81/e8/f281e8e220ab5beb10d4f1a20dadb922.jpg" alt="Merch">
+    <span>Merch</span>
+  </a>
+
+  <a href="playlists.html" class="section-card">
+    <img src="https://i.pinimg.com/736x/de/a4/23/dea42310bcb3cbda801b57137c779f63.jpg" alt="Playlists">
+    <span>Playlists</span>
+  </a>
+
+<a href="contact.html" class="section-card">
+    <img src="https://i.pinimg.com/736x/e0/ad/0b/e0ad0bd6e27e1b7cdd084be89424987e.jpg" alt="Contact Us">
+    <span>Contact Us</span>
+  </a>
+
+<a href="cart.html" class="section-card">
+    <img src="https://i.pinimg.com/1200x/e0/41/af/e041af0d0c78e388086dba96f0e033ee.jpg" alt="Shopping Cart">
+    <span>Your Cart</span>
+  </a>
+
+</div>
+</section>
+
+
+  <!--Featured Products Table-->
+  <main>
+    <section class="featured-products">
+        <h2>Featured Albums(Our Favorites!)</h2>
+        <table class="album-table">
             <tr>
                 <th>Album</th>
                 <th>Artist</th>
@@ -50,9 +77,22 @@
             </tr>
     <!--Dagen's Favorite Album!-->            
                 <tr>
-                    <td>Underwater Sunshine</td>
-                    <td>Couting Crows</td>
+                    <td>
+                    <img src="https://m.media-amazon.com/images/I/71+GAZxjMTL._UF1000,1000_QL80_.jpg" class="album-img">
+                    <br>  
+                     Underwater Sunshine
+                    </td>
+                    <td>Counting Crows</td>
                     <td>$25.99</td>
+                </tr>
+    <!--Ava's Favorite Album!-->            
+                <tr>
+                    <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Grimes_-_Visions_album_cover.png/250px-Grimes_-_Visions_album_cover.png" class="album-img">
+                    <br>  
+                    Visions</td>
+                    <td>Grimes</td>
+                    <td>$24.99</td>
                 </tr>
     <!--Gabby's Favorite Album!-->            
                 <tr>
@@ -60,12 +100,7 @@
                     <td>Artist</td>
                     <td>Price</td>
                 </tr>            
-    <!--Ava's Favorite Album!-->            
-                <tr>
-                    <td>Ava's Fav Album</td>
-                    <td>Artist</td>
-                    <td>Price</td>
-                </tr>
+
     <!--Srihitha's Favorite Album!-->            
                 <tr>
                     <td>Srihitha's Fav Album</td>
@@ -73,9 +108,11 @@
                     <td>Price</td>
                 </tr>                 
         </table>
-    </section>
+
+</section>
+
     <!--Favorite Artist Form-->
-    <section>
+<section class="artist-section">
         <h2>Tell Us Your Favorite Artist</h2>
         <!--Form Validation!!-->
         <form onsubmit="return validateForm()">
@@ -92,6 +129,7 @@
         </form>
     </section>
    </main>
+
 
    <!--Footer-->
    <footer>
