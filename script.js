@@ -1,7 +1,7 @@
 //This initializes the variables for the slide carousel
 const slides = [
     {
-        image: "images/abbey-road.jpg",
+        image: "https://m.media-amazon.com/images/I/81sBKBIcwvL._UF1000,1000_QL80_.jpg",
         caption: "Abbey Road by The Beatles - $29.99",
         alt: "Abbey Road album cover"
     },
@@ -22,44 +22,40 @@ const slides = [
     }
 ];
 
+// //this will set up the image carousel
 let currentSlide = 0;
 
-//this will set up the image carousel
-function showSlide(index) {
-    const image = document.getElementById("carousel-image");
-    const caption = document.getElementById("carousel-caption");
+const track = document.querySelector(".carousel-track");
+const slide = document.querySelectorAll(".slide");
 
-    // Prevent errors on pages that do not have the carousel
-    if (!image || !caption) {
-        return;
-    }
-
-    image.src = slides[index].image;
-    image.alt = slides[index].alt;
-    caption.textContent = slides[index].caption;
+function updateCarousel(){
+track.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
 
-//This will go to the next slide of the image carousel
-function nextSlide() {
+
+// //This will go to the next slide of the image carousel
+function nextSlide(){
     currentSlide++;
 
-    if (currentSlide >= slides.length) {
-        currentSlide = 0;
-    }
-
-    showSlide(currentSlide);
+if(currentSlide >= slides.length){
+    currentSlide = 0;
 }
 
-//This will go back through the image carousel
-function prevSlide() {
-    currentSlide--;
-
-    if (currentSlide < 0) {
-        currentSlide = slides.length - 1;
-    }
-
-    showSlide(currentSlide);
+updateCarousel();
 }
+
+// //This will go back through the image carousel
+function prevSlide(){
+currentSlide--;
+
+if(currentSlide < 0){
+    currentSlide = slides.length - 1;
+}
+
+updateCarousel();
+}
+
+setInterval(nextSlide,4000);
 
 //this will add items to cart from the vinyl section
 //This will add items to cart from the CD section
