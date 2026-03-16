@@ -8,25 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!--Navigation Links-->
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="playlists.html">Playlists</a>
+    <a href="vinyls.html">Vinyl</a>
+    <a href="cds.html">CDs</a>
+    <a href="merch.html">Merch</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a></nav>
+
    
 
     <!--Header section--> 
 
    <header >
     <h1>Vinyl Vibes Music Store</h1>
-    <p>Discover vinyl, CDs, playlsits and merch from your favorite artists!</p>
-   </header>
-
-    <!--Welcome Bar-->
-<main>
     <section class="welcome-section">
         <h2>Welcome to Our Store!</h2>
-        <p>Browse our collection of records, CDs, exclusive music merch and amazing playlists!</p>
-    </section>
-</main>
+        <p>Browse our collection of records, CDs, exclusive music merch and amazing playlists!</p>   </header>
 
 
-<!--Navigation Links-->
+<!--Section Images and Links-->
 
 <div class="shop-sections">
 
@@ -71,49 +75,69 @@
         <h2>Featured Albums(Our Favorites!)</h2>
         <table class="album-table">
             <tr>
-                <th>Album</th>
-                <th>Artist</th>
-                <th>Price</th>
+                <th class="album-col">Dagen's Top Pick</th>
+                <th>Ava's Top Pick</th>
+                <th>Gabby's Top Pick</th>
+                <th>Srihitha's Top Pick</th>
             </tr>
     <!--Dagen's Favorite Album!-->            
                 <tr>
-                    <td>
+                <td class="album-col">
                     <img src="https://m.media-amazon.com/images/I/71+GAZxjMTL._UF1000,1000_QL80_.jpg" class="album-img">
                     <br>  
                      Underwater Sunshine
-                    </td>
-                    <td>Counting Crows</td>
-                    <td>$25.99</td>
-                </tr>
-    <!--Ava's Favorite Album!-->            
-                <tr>
-                    <td>
+                    <br>
+                    Counting Crows
+                    <br>
+                    $25.99
+                    <br>
+                    <button onclick="addToCart('Underwater Album', 25.99)">Add to Cart</button></td>
+                </td>
+     <!--Ava's Favorite Album!-->            
+
+                <td>
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Grimes_-_Visions_album_cover.png/250px-Grimes_-_Visions_album_cover.png" class="album-img">
                     <br>  
-                    Visions</td>
-                    <td>Grimes</td>
-                    <td>$24.99</td>
-                </tr>
+                    Visions
+                    <br> 
+                    Grimes
+                    <br> 
+                    $24.99
+                    <br>
+                    <button onclick="addToCart('Visions Album', 24.99)">Add to Cart</button></td>
+                </td>
     <!--Gabby's Favorite Album!-->            
-                <tr>
-                    <td>Gabby's Fav Album</td>
-                    <td>Artist</td>
-                    <td>Price</td>
-                </tr>            
-
+                <td>
+                    <!--Add image of album-->            
+                    <br>  
+                    <!--Add name of album-->            
+                    <br> 
+                    <!--Add name of artist-->            
+                    <br> 
+                    <!--Add price of album-->
+                    <br>
+                    <button onclick="addToCart('Visions Album', 24.99)">Add to Cart</button></td>
+                </td>
     <!--Srihitha's Favorite Album!-->            
-                <tr>
-                    <td>Srihitha's Fav Album</td>
-                    <td>Artist</td>
-                    <td>Price</td>
-                </tr>                 
+                <td>
+                    <!--Add image of album-->            
+                    <br>  
+                    <!--Add name of album-->            
+                    <br> 
+                    <!--Add name of artist-->            
+                    <br> 
+                    <!--Add price of album-->
+                    <br>
+                    <button onclick="addToCart('Visions Album', 24.99)">Add to Cart</button></td>
+                </td>
+            </tr>              
         </table>
 
 </section>
 
     <!--Favorite Artist Form-->
 <section class="artist-section">
-        <h2>Tell Us Your Favorite Artist</h2>
+        <h2>Tell Us Your Favorite Artist!</h2>
         <!--Form Validation!!-->
         <form onsubmit="return validateForm()">
             <label for="name">Name:</label>
