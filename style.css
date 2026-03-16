@@ -1,24 +1,8 @@
 
-/* Style for the section links */
-.table-of-contents ul { 
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    padding: 10px;
-    justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #32402c;
+body {
+  background: linear-gradient(#584b6a, #ad9cb7);
 }
 
-.table-of-contents a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-}
-.table-of-contents a:hover {
-    color: #430926;
-}
 
 /* header format */
 header {
@@ -27,20 +11,34 @@ header {
     padding: 20px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
 }
 
 
-h1 {
-    font-size: 40px;
+header h1{
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-/* body format */
+
+
+header p{
+    font-size: 18px;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+}
+
+
 
 
 /* welcome box format */
 .welcome-section{
-    background-color: #bfbfbf;
-    padding: 40px;
+    background-color: #826a85;
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
 }
@@ -50,13 +48,56 @@ p {
     line-height: 1.6;
 }
 
-/* Style clickable images to content sections */
+.welcome-section h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.welcome-section h2::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #5a3a5a;
+    margin: 10px auto;
+}
+
+
+/* Navigation Bar */
+
+.navbar{
+    background-color:#1d131d;
+    padding:15px;
+    text-align:center;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+    font-weight:500;
+}
+
+.navbar a:hover{
+    color:#e0c9a6;
+}
+
+
+
+
+/* Style of the clickable images to content sections */
 .shop-sections {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 80px;
     background-color: antiquewhite;
+    max-width: 1100px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+
 }
 
 .section-card {
@@ -86,7 +127,7 @@ p {
 
 
 
-/* Style featured albums table */
+/* Style of featured albums table */
 .album-table{
     width: 80%;
     font-size: large;
@@ -95,34 +136,37 @@ p {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.album-col{
+    width: 260px;   
+}
+
+.album-col img{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
 .album-table th{
-    background-color: #502c5a;
+    background-color: #683f4d;
     color: white;
     padding: 12px;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
 }
 
 .album-table td{
     padding: 12px;
     border-bottom: 1px solid antiquewhite;
+    background-color: #746d84;
+    text-align:center;
 }
 
-.album-table tr:nth-child(even){
-    background-color: #f5f5f5;
-}
 
-.album-table tr:nth-child(odd){
-    background-color: #786c6c;
-}
-
-.album-table tr:hover{
+.album-table td:hover {
     background-color: #ffedb9;
 }
 
-.album-table button:hover{
-    background-color: antiquewhite;
-}
 
 .featured-products h2 {
     text-align: center;
@@ -131,42 +175,185 @@ p {
     margin-bottom: 20px;
 }
 
-.featured-products {
-    background-color: darkgrey;
+
+.featured-products{
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #482c3a;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
 }
-
-
-mark {
-    background-color: #ffffff;
-    padding: 0 5px;
-    border-radius: 4px;
-}
-
-
-.album-img{
-width:300px;
-height:300px;
-object-fit:cover;
-display:block;
-margin:auto;
-}
-
-.album-table td{
-text-align:center;
-padding:15px;
-}
-
 
 
 /* Style for the favorite artist */
 .artist-section {
-    background-color: #938167;
-    padding: 40px;
-    border-radius: 10px;
+    max-width: 1300px;
+    margin: auto;
+    background-color: rgb(200, 194, 205);
+    padding: 60px;
+    border-radius: 20px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .artist-section h2 {
     font-size: 30px;
+}
+
+.artist-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/* Style for the playlist tab*/
+
+.playlist-section{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+    background-color: #4b323e;
+}
+
+/* Suggest box */
+.suggest-box{
+    width: 400px;
+    background:#e2dfda;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* Playlist table */
+.playlist-table table{
+    border-collapse:collapse;
+    width: 80%;
+    font-size: large;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.playlist-table td{
+    border-bottom:1px solid  antiquewhite;
+    background-color: #b0a6c8;
+    padding:40px;
+    text-align:center;
+}
+
+.playlist-table th{
+    background:#683f4d;
+    width: 200px;
+    color: black;
+    padding:15px 25px;
+}
+
+.playlist-table td:hover {
+    background-color: #ffedb9;
+}
+
+.playlist-table th p{
+    color: rgb(172, 171, 171);
+}
+
+.playlist-table-background {
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(78, 66, 88);
+}
+
+iframe{
+    width:300px;
+    height:380px;
+}
+
+.why-playlist{
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #493b42;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* Style for the image carousel */
+
+.carousel-section{
+text-align:center;
+padding:40px;
+}
+
+.carousel-section h2{
+font-size:30px;
+margin-bottom:20px;
+background-color: #4b323e;
+color: white;
+display: inline-block;
+padding: 10px 20px;
+border-radius: 10px;
+}
+
+.carousel-container{
+position:relative;
+max-width:700px;
+margin:auto;
+overflow:hidden;
+}
+
+.carousel-track{
+display:flex;
+transition:transform 0.5s ease-in-out;
+}
+
+.slide{
+min-width:100%;
+text-align:center;
+}
+
+.slide img{
+width: 80%;
+max-width: 800px;
+border-radius: 12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.4);
+}
+
+.slide p{
+margin-top:10px;
+font-weight:bold;
+}
+
+.carousel-btn{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:black;
+color:white;
+border:none;
+padding:10px 15px;
+font-size:22px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.prev{
+left:0;
+}
+
+.next{
+right:0;
+}
+
+.carousel-btn:hover{
+background:#444;
 }
