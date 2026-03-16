@@ -8,77 +8,138 @@
 
 </head>
 <body>
+    <!--Navigation Links-->
 
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="playlists.html">Playlists</a>
+    <a href="vinyls.html">Vinyl</a>
+    <a href="cds.html">CDs</a>
+    <a href="merch.html">Merch</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a></nav>
+
+   
+
+ <!--Header-->
     <header>
         <h1>Vinyl Vibes Music Store</h1>
         <p>Explore playlists inspired by our favorite sounds</p>
     </header>
 
-    <!--Navigation Bar-->
-    <nav class="table-of-contents">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="vinyls.html">Vinyl</a></li>
-            <li><a href="cds.html">CDs</a></li>
-            <li><a href="merch.html">Merch</a></li>
-            <li><a href="playlists.html">Playlists</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
-        </ul>
-    </nav>
+
+
+    
+ <!--Random Playlist Suggestion and Playlist table-->
 
     <main>
-        <section>
-            <h2>Featured Playlists</h2>
-            <p>Listen to our curated playlists based on different moods and genres.</p>
-        </section>
-        
+<div class="playlist-section">
+
+    <section class="suggest-box">
         <!-- Random playlist button -->
+         <h2>Not sure what music to listen to next?</h2>
+         <p>Click the button below for a random playlist suggestion!</p>
         <button onclick="suggestPlaylist()">Suggest a Playlist</button>
 
         <p id="playlistSuggestion"></p>
     </section>
 
-        <section>
+    
+    <section class="playlist-table">
+       
+        
+        <!--Table-->
+
+        <section class="playlist-table-background">
+            <h2>Featured Playlists</h2>
+            <p>Listen to our curated playlists based on different moods and genres.</p>
+       
+        
             <table border="1">
                 <tr>
-                    <th>Playlist Name</th>
-                    <th>Genre / Mood</th>
-                    <th>Description</th>
-                    <th>Listen</th>
+                    <th>Classic Rock Revival
+                        <br>
+                        <p>A mix of legendary guitar riffs and timeless albums.</p>
+                    </th>
+                    <td>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXRqgorJj26U?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </td>
+        
+                    </td>
+                    <td>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1ti3v0lLrJ4KhSTuxt4loZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </td>
+                    
+                    <td>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXe9JbVZotqp5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </td>
                 </tr>
+                
                 <tr>
-                    <td>Classic Rock Revival</td>
-                    <td>Rock</td>
-                    <td>A mix of legendary guitar riffs and timeless albums.</td>
-                    <!--Make a Playlist and add it here (or just find one!)-->
-                    <td><a href="https://open.spotify.com/" target="_blank">Open Playlist</a></td>
+                    <th>Pop Essentials
+                        <br>
+                        <p>Upbeat hits and fan-favorite pop tracks.</p>
+                    </th>
+                    <td>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EQncLwOalG3K7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </td>
+        
+                    </td>
+                    <td>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </td>
+                    
+                    <td>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/008G1BbvK1NQvbAV8MHvDz?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </td>
                 </tr>
+
+
                 <tr>
-                    <td>Pop Essentials</td>
-                    <td>Pop</td>
-                    <td>Upbeat hits and fan-favorite pop tracks.</td>
-                    <!--Make a Playlist and add it here (or just find one!)-->
-                    <td><a href="https://open.spotify.com/" target="_blank">Open Playlist</a></td>
+                    <th>Late Night Vinyl
+                        <br>
+                        <p>Relaxed songs for studying, driving, or winding down.</p>
+                    </th>
+                    <td>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EVHGWrwldPRtj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </td>
+                    <td>
+                       <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXe9gFZP0gtP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+                    </td>
+                    <td>
+                       <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVFeEut75IAL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+                    </td>
                 </tr>
+
+
                 <tr>
-                    <td>Late Night Vinyl</td>
-                    <td>Chill</td>
-                    <td>Relaxed songs for studying, driving, or winding down.</td>
-                    <!--Make a Playlist and add it here (or just find one!)-->
-                    <td><a href="https://open.spotify.com/" target="_blank">Open Playlist</a></td>
-                </tr>
-                <tr>
-                    <td>Soul Session</td>
-                    <td>Soul / R&amp;B</td>
-                    <td>Smooth vocals and classic soul favorites.</td>
-                    <!--Make a Playlist and add it here (or just find one!)-->
-                    <td><a href="https://open.spotify.com/" target="_blank">Open Playlist</a></td>
+                    <th>Soul Session
+                        <br>
+                        <p>Smooth vocals and classic soul favorites.</p>
+                    </th>
+                    <td>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7e9kCHPGrQL6RaqJak1YFk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </td>
+                    <td>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EQntZpEGgfBif?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                    </td>
+                    <td>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2hNQN2Fv6Cy?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                    
+                    </td>
+
                 </tr>
             </table>
-        </section>
+             </section>
+    </section>  
+    </div>
+        
+        
+        
+        
 
-        <section>
+
+
+    <!--Why Playlist Section-->
+
+        <section class="why-playlist">
             <h2>Why Playlists?</h2>
             <p>
                 Our playlists help customers discover music that matches the records,
@@ -86,6 +147,11 @@
             </p>
         </section>
     </main>
+
+
+
+
+
 
     <!--Footer-->
     <footer>
