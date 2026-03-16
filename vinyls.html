@@ -8,43 +8,64 @@
 
 </head>
 <body>
+        <!--Navigation Links-->
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="playlists.html">Playlists</a>
+    <a href="vinyls.html">Vinyl</a>
+    <a href="cds.html">CDs</a>
+    <a href="merch.html">Merch</a>
+<a href="cart.html">Cart (<span id="cart-count">0</span>)</a></nav>
+
+   
 
     <header>
         <h1>Vinyl Vibes Music Store</h1>
         <p>Browse our vinyl collection</p>
     </header>
-<!--Navigation Bar-->
-    <nav class="table-of-contents">
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="vinyls.html">Vinyl</a></li>
-        <li><a href="cds.html">CDs</a></li>
-        <li><a href="merch.html">Merch</a></li>
-        <li><a href="playlists.html">Playlists</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
-        </ul>
-    </nav>
+
+
+
+
 <main>
-    <section>
-        <h2>Vinyl Records</h2>
-        <p>Browse our collection of classic and modern vinyls!</p>
-    </section>
-    <!--Image Carousel-->
-    <section class="carousel-section">
+<section class="carousel-section">
+
         <h2>Featured Vinyl</h2>
 
-        <div class="carousel">
-            <button onclick="prevSlide()">Previous</button>
-            <div class ="slide">
-                <!--ADD IMAGES-->
-                <img id="carousel-image" src="images/abbey-road.jpg" alt="The Beatles Walking Across a Crosswalk">
-                <p id="carousel-caption">Abbey Road by the Beatles - $29.99</p>
-            </div>
+        <div class="carousel-container">
 
-            <button onclick="nextSlide()">Next</button>
+            <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+
+                <div class="carousel-track">
+
+                    <div class="slide">
+                    <img src="https://m.media-amazon.com/images/I/81sBKBIcwvL._UF1000,1000_QL80_.jpg">
+                    <p>Abbey Road – The Beatles ($29.99)</p>
+                    </div>
+
+                    <div class="slide">
+                    <img src="https://m.media-amazon.com/images/I/71BekDJBb3L._UF1000,1000_QL80_.jpg">
+                    <p>Rumours – Fleetwood Mac ($24.99)</p>
+                    </div>
+
+                    <div class="slide">
+                    <img src="https://m.media-amazon.com/images/I/81ogsUqshzL._UF1000,1000_QL80_.jpg">
+                    <p>Thriller – Michael Jackson ($27.99)</p>
+                    </div>
+
+                    <div class="slide">
+                    <img src="https://images.squarespace-cdn.com/content/v1/565c1ab5e4b05079e4bfa169/1663120096213-0I362NY464WQP6R8U2J5/Amy+Winehouse+Back+To+Black+Album+Cover.jpg?format=2500w">
+                    <p>Back to Black – Amy Winehouse ($26.99)</p>
+                    </div>
+
+                </div>
+
+            <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+
         </div>
-    </section>
+
+</section>
 
     <!--Available Vinyls-->
     <section>
@@ -88,6 +109,8 @@
         </table>
     </section>
 </main>
+
+
 <!--Footer-->
 <footer>
         <p>&copy; 2026 Vinyl Vibes Music Store</p>
